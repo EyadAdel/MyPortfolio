@@ -1,0 +1,48 @@
+.portfolio {
+  padding: 50px 100px;
+  height: 100vh;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio {
+    padding: 30px;
+    height: auto;
+  }
+}
+
+.portfolio-title {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-title {
+    font-size: 30px;
+    width: 90%;
+  }
+}
+
+.portfolio-description {
+  width: 45%;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-description {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .project-list {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+}

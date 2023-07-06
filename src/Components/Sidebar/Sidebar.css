@@ -1,0 +1,169 @@
+.sidebar {
+  background-color: white;
+  width: 100px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.09);
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+}
+
+.sidebar .image {
+  display: flex;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  background-color: brown;
+  border-radius: 50%;
+  margin: 10px auto;
+  background-image: url(../../../public/Media/Untitled.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sidebar .about {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 85px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  color: #ff5352;
+  cursor: pointer;
+}
+
+.sidebar .about .icon {
+  width: 30px;
+  height: 30px;
+}
+
+.sidebar .about p {
+  display: none;
+  font-weight: bold;
+}
+
+.sidebar .about:hover {
+  background-color: rgba(255, 83, 82, 0.2);
+}
+
+.sidebar .about:hover p {
+  display: block;
+  animation: fade_in_show 1s;
+}
+
+.sidebar .project {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 85px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  color: #0dcaf0;
+  cursor: pointer;
+}
+
+.sidebar .project .icon {
+  width: 30px;
+  height: 30px;
+}
+
+.sidebar .project p {
+  font-weight: bold;
+  display: none;
+}
+
+.sidebar .project:hover {
+  background-color: rgb(13, 202, 240, 0.2);
+}
+
+.sidebar .project:hover p {
+  display: block;
+  animation: fade_in_show 1s;
+}
+
+.sidebar .contact {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 85px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  color: #00da54;
+  cursor: pointer;
+}
+
+.sidebar .contact .icon {
+  width: 30px;
+  height: 30px;
+}
+
+.sidebar .contact p {
+  display: none;
+  font-weight: bold;
+}
+
+.sidebar .contact:hover {
+  background-color: rgb(0, 218, 84, 0.2);
+}
+
+.sidebar .contact:hover p {
+  display: block;
+  animation: fade_in_show 1s;
+}
+
+.links {
+  display: flex;
+}
+
+.links ul {
+  list-style: none;
+}
+
+.links li {
+  padding: 15px 0;
+}
+
+.links .git-icon {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  color: chocolate;
+}
+
+.links .linked-icon {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  color: #0dcaf0;
+}
+
+.links .face-icon {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  color: blue;
+}
+
+@keyframes fade_in_show {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+}
