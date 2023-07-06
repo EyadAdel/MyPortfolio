@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Landing.css";
+import reusme from "../../reusme.pdf";
 
 const Landing = () => {
   return (
@@ -27,7 +28,7 @@ const Landing = () => {
             specializing in creating stylish, modern website, web services and
             online stores.
           </p>
-          <a href="https://api.cloudinary.com/v1_1/dsfjtwsiz/image/download?api_key=397683248416134&attachment=true&audit_context=eyJhY3Rvcl90eXBlIjoidXNlciIsImFjdG9yX2lkIjoiOGVlZTg2NWFhZDkyMzY5MzY3ZjhkODVmMDBmNDA3NDciLCJ1c2VyX2V4dGVybmFsX2lkIjoiMzg0MWRlMGNhNTFlYTM1M2JjNzY0OGQxOTU0NTZiIiwidXNlcl9jdXN0b21faWQiOiJsZW8uYWRlbDE1MEBnbWFpbC5jb20iLCJjb21wb25lbnQiOiJjb25zb2xlIn0%3D&public_id=Eyad_Adel-1_yynzds&signature=088c38d7e3d95e0626975d59f148ccd31f76de14&source=ml&target_filename=Eyad_Adel-1_yynzds.pdf&timestamp=1688612624&type=upload">
+          <a href={reusme} download="Reusme">
             <button className="cv-btn">Download CV</button>
           </a>
         </div>
